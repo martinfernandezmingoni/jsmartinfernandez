@@ -7,7 +7,7 @@ function start(){
 
     for (let i = 2; i >= 0; i--){
         let userPIN = prompt('Para iniciar lo haremos con una pregunta muy sencilla, Cual es el segundo nombre de Homero J. Simpson ? \n Solo tiene 3 oportunidades' );
-        if (userPIN.toLowerCase == secondName){
+        if (userPIN.toLowerCase() == secondName){
             alert('Excelente, primer prueba superada, tranquilo mi sobrino de 2 años tambien la sabia');
             ingresar = true;
             break;
