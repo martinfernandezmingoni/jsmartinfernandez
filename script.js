@@ -14,7 +14,7 @@ function start(){
         }else if (i >= 1) {
             alert('Nop, te quedan ' + i + ' intentos, vamos que es muy facil...');
         }else{
-            alert('Enserio ? te quedaste sin intentos... toca F5 y volve a intentarlo, pero antes mirate el capitulo "D oh-in In the Wind" ');
+            alert('Es enserio ? te quedaste sin intentos... toca F5 y volve a intentarlo, pero antes mirate el capitulo "D oh-in In the Wind" ');
         }
                     
     }
