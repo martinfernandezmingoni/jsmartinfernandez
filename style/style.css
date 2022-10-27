@@ -1,0 +1,14 @@
+html { 
+    background: url(../img/simpons.webp) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+h1, h2, h4{
+    color: yellow;
+    font-weight: bold;
+    font-size: 25px;
+
+}
