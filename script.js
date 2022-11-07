@@ -51,14 +51,11 @@ if (start()) {
                 function showScoreF(){
                   if (scoreF == 10){
                     alert('Excelente respondiste todo muy bien, superaste nivel Facil, casi haces que Maggie hable \n tu puntaje fue de ' + scoreF);
-                  }
-                  if(scoreF >= 6 && scoreF <=8){
+                  } else if(scoreF >= 6 && scoreF <=8){
                     alert('Ah bueno, ponete a mirar mas capitulos, aprobaste pero era el nivel facil. Ayudante de Santa saco 10! \n tu puntaje fue de ' + scoreF);
-                  }
-                  if(scoreF >= 2 && scoreF <= 4){
+                  } else if(scoreF >= 2 && scoreF <= 4){
                     alert('No aprobaste, miraste algun capitulo alguna vez? Homero es el gordo que toma cerveza y come rosquillas \n tu puntaje fue de ' + scoreF);
-                  }
-                  if(scoreF == 0){
+                  } else if(scoreF == 0){
                     alert('.... nada que decir, claramente te estas perdiendo la mejor serie animada de todos los tiempos! \n tu puntaje fue de ' + scoreF);
                   }
 
@@ -86,14 +83,11 @@ if (start()) {
                 function showScoreI(){
                   if (scoreI == 10){
                     alert('Wow nivel intermedio excelente, nada mal eh \n tu puntaje fue de ' + scoreI);
-                  }
-                  if(scoreI >= 6 && scoreI <=8){
+                  } else if(scoreI >= 6 && scoreI <=8){
                     alert('mmmm bueno algo es algo, Ayudante de Santa saco 8 \n tu puntaje fue de ' + scoreI);
-                  }
-                  if(scoreI >= 2 && scoreI <= 4){
+                  } else if(scoreI >= 2 && scoreI <= 4){
                     alert('Que decirte, escuchate la cancion Baby on board, es un TEMON !!!\n tu puntaje fue de ' + scoreI);
-                  }
-                  if(scoreI == 0){
+                  } else if(scoreI == 0){
                     alert('Segui mirando capitulos... esto no es lo tuyo \n tu puntaje fue de ' + scoreI);
                   }
 
@@ -121,14 +115,11 @@ if (start()) {
                 function showScoreD(){
                   if (scoreD == 10){
                     alert('Digno de presidir a los Magios, puntaje perfecto \n tu puntaje fue de ' + scoreD);
-                  }
-                  if(scoreD>= 6 && scoreD <=8){
+                  } else if(scoreD>= 6 && scoreD <=8){
                     alert('No vamos a decir nada de Ayudante de Santa, pero seguro te sabes algunas frases \n tu puntaje fue de ' + scoreD);
-                  }
-                  if(scoreD>= 2 && scoreD <= 4){
+                  }else if(scoreD>= 2 && scoreD <= 4){
                     alert('Sintoniza el canal de las 3 pelotitas sabados a la tarde, o paga Star +, pero ponete a mirar a la familia amarilla \n tu puntaje fue de ' + scoreD);
-                  }
-                  if(scoreD== 0){
+                  }else if(scoreD== 0){
                     alert('Era el nivel Dificil, pero un cero ??? anda a mirar padre de familia, es una serie mas para vos...  \n tu puntaje fue de ' + scoreD);
                   }
 
