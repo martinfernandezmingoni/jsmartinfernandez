@@ -33,19 +33,27 @@ if (start()) {
 
         switch (opcion) {
             case '1':
-                if(prompt('Que apellido le sugerieron cambiarse a la familia para escaparse de Bob Patiño ? \n1- Wilson. \n2- Thompson. \n3- Jhonson ') == '2'){
+                let questionsE = [
+                  ['Que apellido le sugerieron cambiarse a la familia para escaparse de Bob Patiño ?', 'thompson'],
+                  ['Como se llama el hermano gemelo de Bart ?', 'hugo'],
+                  ['Cual es la frase que hizo famoso a Bart en el programa de Krusty', 'yo no fui'],
+                  ['Como se llaman las hermanas de Marge ?', 'paty y selma'],
+                  ['Que instrumento practica Lisa Simpson', 'saxo']
+              
+              ];
+                 if(prompt( questionsE[0] + '\n1- Wilson. \n2- Thompson. \n3- Jhonson ') == '2'){
                     scoreF = scoreF + 2;
                 }
-                if(prompt('Como se llama el hermano gemelo de Bart ? \n1- Bort. \n2- Jorge. \n3- Hugo ') == '3'){
+                if(prompt( questionsE[1] + ' \n1- Bort. \n2- Jorge. \n3- Hugo ') == '3'){
                     scoreF = scoreF + 2;
                 }
-                if(prompt('Cual es la frase que hizo famoso a Bart en el programa de Krusty \n1- Comete mis pantalones. \n2- Kawawonga. \n3- Yo no fui ') == '3'){
+                if(prompt( questionsE[2] + ' \n1- Comete mis pantalones. \n2- Kawawonga. \n3- Yo no fui ') == '3'){
                     scoreF = scoreF + 2;
                 }
-                if(prompt('Como se llaman las hermanas de Marge ? \n1- Paty y Selma. \n2- Serena y Venus. \n3- Flor y Jazmin ') == '1'){
+                if(prompt( questionsE[3] + ' \n1- Paty y Selma. \n2- Serena y Venus. \n3- Flor y Jazmin ') == '1'){
                     scoreF = scoreF + 2;
                 }
-                if(prompt('Que instrumento practica Lisa Simpson \n1- Guitarra. \n2- Saxofon. \n3- Violin') == '2'){
+                if(prompt(questionsE[4] + ' \n1- Guitarra. \n2- Saxofon. \n3- Violin') == '2'){
                     scoreF = scoreF + 2;
                 }
                 function showScoreF(){
@@ -65,19 +73,27 @@ if (start()) {
                 break;
 
             case '2':
-                if(prompt('Que instrumento toca Bart en la banda de Jazz ? \n1- Bajo. \n2- Saxofon. \n3- Bateria ') == '3'){
+              let questionsI = [
+                ['Que instrumento toca Bart en la banda de Jazz ?'],
+                ['Con que fruta compara el matrimonio Homero Simpson ?'],
+                ['Con quien se da su primer beso Lisa Simpson ?'],
+                ['Como se llama el trago que hizo famoso a Moe ?'],
+                ['Como se llama el grupo musical de Homero, Apu, Skiner y Barney ?'],
+
+              ];
+                if(prompt(questionsI[0] +' \n1- Bajo. \n2- Saxofon. \n3- Bateria ') == '3'){
                     scoreI = scoreI + 2;
                 }
-                if(prompt('Con que fruta compara el matrimonio Homero Simpson \n1- Manzana. \n2- Naranja. \n3- Banana ') == '2'){
+                if(prompt(questionsI[1] +' \n1- Manzana. \n2- Naranja. \n3- Banana ') == '2'){
                     scoreI = scoreI + 2;
                 }
-                if(prompt('Con quien se da su primer beso Lisa Simpson \n1- Milhouse \n2- Ralph. \n3- Nelson ') == '3'){
+                if(prompt(questionsI[2] +' \n1- Milhouse \n2- Ralph. \n3- Nelson ') == '3'){
                     scoreI = scoreI + 2;
                 }
-                if(prompt('Como se llama el trago que hizo famoso a Moe \n1- Llamarada Moe \n2- El Fuego de Moe. \n3- Moe incendiado ') == '1'){
+                if(prompt(questionsI[3] + ' \n1- Llamarada Moe \n2- El Fuego de Moe. \n3- Moe incendiado ') == '1'){
                     scoreI = scoreI + 2;
                 }
-                if(prompt('Como se llama el grupo musical de Homero, Apu, Skiner y Barney \n1- El apuesto Homero Simpsons mas tres. \n2- Los Borbotones  \n3- El cuarteto de Homero') == '2'){
+                if(prompt(questionsI[4] + ' \n1- El apuesto Homero Simpsons mas tres. \n2- Los Borbotones  \n3- El cuarteto de Homero') == '2'){
                     scoreI = scoreI + 2;
                 }
                 function showScoreI(){
@@ -97,19 +113,26 @@ if (start()) {
                 break;
 
             case '3':
-                if(prompt('Como se llama el creador de los Simpsons \n1- William Groening. \n2- Matt Groening. \n3- Abraham Groening') == '2'){
+              let questionsD = [
+                ['Como se llama el creador de los Simpsons ?'],
+                ['Cual es el nombre del Sr. Smithers ?'],
+                ['Cuantos gatos tuvo la familia Simpsons ?'],
+                ['Que expresidente de USA se muda enfrente de la familia, luego de la pelea de Homero con Bush ?'],
+                ['Que cancion toca Lisa Simpson en el final del episodio "El Sax de Lisa"']
+              ];
+                if(prompt(questionsD[0] + ' \n1- William Groening. \n2- Matt Groening. \n3- Abraham Groening') == '2'){
                     scoreD = scoreD + 2;
                 }
-                if(prompt('Cual es el nombre del Sr. Smithers ? \n1- William \n2- Willem \n3- Waylon ') == '3'){
+                if(prompt(questionsD[1] + ' \n1- William \n2- Willem \n3- Waylon ') == '3'){
                     scoreD = scoreD + 2;
                 }
-                if(prompt('Cuantos gatos tuvo la familia Simpsons.\n1- 6 \n2- 5. \n3- 7') == '2'){
+                if(prompt(questionsD[2] + '\n1- 6 \n2- 5. \n3- 7') == '2'){
                     scoreD = scoreD + 2;
                 }
-                if(prompt('Que expresidente de USA se muda enfrente de la familia, luego de la pelea de Homero con Bush ? \n1- Ronal Regan. \n2- Jimmy Carter. \n3- Gerald Ford') == '3'){
+                if(prompt(questionsD [3] + ' \n1- Ronal Regan. \n2- Jimmy Carter. \n3- Gerald Ford') == '3'){
                     scoreD = scoreD + 2;
                 }
-                if(prompt('Que cancion toca Lisa Simpson en el final del episodio "El Sax de Lisa" \n1- Baker Street, de Gerry Rafferty. \n2- Careless Whisper, de George Michael. \n3- Jazzman, de Carole King') == '1'){
+                if(prompt(questionsD [4] + ' \n1- Baker Street, de Gerry Rafferty. \n2- Careless Whisper, de George Michael. \n3- Jazzman, de Carole King') == '1'){
                     scoreD = scoreD + 2;
                   }
                 function showScoreD(){
